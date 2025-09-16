@@ -1,0 +1,181 @@
+.modalWideWrapper {
+  max-width: 1024px;
+  max-height: 532px;
+  width: 100%;
+  margin: 0 auto;
+  background: transparent;
+  padding: 0;
+}
+
+.modalContent {
+  background-color: var(--card);
+  padding: 40px;
+  border-radius: 24px;
+  max-width: 1060px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  text-align: center;
+  color: var(--caption);
+  margin-bottom: 40px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 40px;
+  padding: 32px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+
+.textSection {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardTitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.category {
+  font-size: 14px;
+  color: var(--caption);
+  margin-bottom: 24px;
+}
+
+.textSection p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 16px;
+}
+
+.modalButtonOutline,
+.modalButtonFilled {
+  flex: 1;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.modalButtonOutline {
+  background-color: var(--card);
+  color: var(--text);
+  border: 2px solid var(--disabled);
+  gap: 8px;
+}
+
+.modalButtonOutline:hover {
+  background-color: var(--button-hover);
+}
+
+.modalButtonFilled {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+
+.modalButtonFilled:hover {
+  background-color: var(--button-pressed);
+}
+
+.imageSection {
+  flex: 1 1 50%;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.mainImage {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: 92px;
+  grid-auto-rows: 92px;
+  gap: 24px;
+}
+
+.thumbnail {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.moreThumbs {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreThumbs img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.moreThumbs::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+.overlayText {
+  position: relative;
+  z-index: 2;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  flex-shrink: 0;
+}

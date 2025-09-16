@@ -1,0 +1,206 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 36px 20px 36px;
+  background-color: var(--background);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  width: 159px;
+  height: 40px;
+}
+
+.arrow {
+  width: 166px;
+  height: 7.94px;
+}
+
+.dropdownArrow {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.aboutProjectButton {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  font-family: var(--main-font);
+  color: var(--default-icon);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.allSkillsButton {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  font-family: var(--main-font);
+  color: var(--default-icon);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.centerSection {
+  flex-grow: 1;
+  margin: 0 32px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.userName {
+  font-family: var(--main-font);
+  color: var(--default-icon);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.userAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerFormOpen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerFormOpen .leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerFormOpen .rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.clearIcon {
+  width: 10.61px;
+  height: 10.61px;
+  margin-left: 8px;
+  color: var(--caption);
+}
+
+/* Стили для выпадающего каталога */
+.allSkillsContainer {
+  position: relative;
+}
+
+.catalogueDropdown {
+  position: absolute;
+  top: 46px;
+  left: -290px;
+  max-width: 1136px;
+  max-height: 1140px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.catalogueOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.arrowDown {
+  transform: rotate(0deg);
+}
+
+/* Стили для выпадающего каталога */
+.allSkillsContainer {
+  position: relative;
+}
+
+.catalogueDropdown {
+  position: absolute;
+  max-width: 1136px;
+  max-height: 1140px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.catalogueOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.arrowDown {
+  transform: rotate(0deg);
+}
+
+.notificationsDropdown {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  width: 360px;
+}
+
+.notificationsOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: transparent;
+}

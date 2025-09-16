@@ -1,0 +1,78 @@
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.cardCarousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.cardWrapper {
+  flex: 0 0 324px;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.carouselArrowLeft,
+.carouselArrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--disabled);
+  color: var(--caption);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.carouselArrowLeft {
+  left: 0;
+  transform: translate(-50%, -50%); /* Сдвигаем на 50% влево */
+}
+
+.carouselArrowRight {
+  right: 0;
+  transform: translate(50%, -50%); /* Сдвигаем на 50% вправо */
+}
+
+@media (max-width: 1439px) {
+  .cardWrapper {
+    flex: 0 0 calc((100% - 48px) / 3);
+  }
+}
+
+@media (max-width: 992px) {
+  .cardWrapper {
+    flex: 0 0 calc((100% - 48px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .cardCarousel {
+    flex-direction: column;
+  }
+
+  .cardWrapper {
+    width: 100%;
+  }
+  .carouselArrowLeft,
+  .carouselArrowRight {
+    display: none;
+  }
+}

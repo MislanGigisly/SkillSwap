@@ -1,0 +1,1 @@
+export { LikedCard } from './likedCard';

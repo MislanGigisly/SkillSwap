@@ -1,0 +1,108 @@
+.cardsContainer {
+  background-color: #fff;
+  width: 100%;
+  min-height: 368px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  max-height: 368px;
+}
+
+.cardsHeader {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardsUserInfo {
+  display: flex;
+  gap: 12px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.small {
+  width: 48px;
+  height: 48px;
+}
+
+.medium {
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+  font-family: var(--third-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.sectionSkils {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardSkils {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tegSkils {
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.cardButton {
+  border-radius: 12px;
+  border: none;
+  padding: 12px 24px;
+  max-width: 284px;
+  height: 48px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

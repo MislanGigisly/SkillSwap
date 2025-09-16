@@ -1,0 +1,83 @@
+.formContainer {
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 556px;
+  height: 692px;
+  flex: 1 1 50%;
+  padding: 50px 60px;
+  background-color: var(--card);
+  border-radius: 12px;
+  position: relative;
+  margin-left: auto;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.input,
+.textarea {
+  padding: 12px 20px;
+  border: 1px solid var(--caption);
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--caption);
+  opacity: 1;
+}
+
+.textarea {
+  font-family: var(--main-font);
+  min-height: 96px;
+  resize: none;
+}
+
+.fileInputWrapper {
+  border: 1px dashed var(--caption);
+  border-radius: 8px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.fileInputLabel {
+  display: block;
+  color: var(--text-link);
+}
+
+.gallerySkillContainer {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonContainer > * {
+  flex: 1 1 50%;
+}

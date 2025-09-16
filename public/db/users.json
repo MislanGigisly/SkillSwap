@@ -1,0 +1,75 @@
+{
+  "data": [
+    {
+      "email": "dimon@mail.ru",
+      "password": "11111111",
+      "skillWants": [
+        "8"
+      ],
+      "name": "Димон",
+      "gender": "Мужской",
+      "age": "Thu Jul 10 2025 01:18:26 GMT+0300 (Москва, стандартное время)",
+      "city": "Москва",
+      "skillId": "1",
+      "skillName": "Спать 3 часа и высываться",
+      "skillCanTeachCategory": "1",
+      "skillCanTeachSubCategory": "7",
+      "description": "Могу научить быть продуктиым при 3 часах сна и еще успевать вести за. собой людей",
+      "favorites": [],
+      "userCard": {
+        "_id": "1752186034417",
+        "name": "Димон",
+        "age": "0 лет",
+        "gender": "Мужской",
+        "description": "Могу научить быть продуктиым при 3 часах сна и еще успевать вести за. собой людей",
+        "city": "Москва",
+        "skillName": "Спать 3 часа и высываться",
+        "skillId": "1",
+        "skillWants": [
+          "8"
+        ],
+        "avatar": "http://localhost:3000/uploads/unknown.jpg",
+        "photos": [
+          "http://localhost:3000/uploads/photos-1752186034410.jpg"
+        ]
+      }
+    },
+    {
+      "email": "dfadsf",
+      "password": "fdgasfgsdfsf",
+      "skillWants": [
+        "8"
+      ],
+      "name": "fgsdgfaswdfga",
+      "gender": "Мужской",
+      "city": "Москва",
+      "skillId": "1",
+      "skillCanTeachCategory": "1",
+      "skillName": "dffdfwf",
+      "skillCanTeachSubCategory": "8",
+      "description": "adfwDEFde",
+      "favorites": [
+        "2",
+        "6",
+        "7"
+      ],
+      "userCard": {
+        "_id": "1752248730792",
+        "name": "fgsdgfaswdfga",
+        "age": "NaN лет",
+        "gender": "Мужской",
+        "description": "adfwDEFde",
+        "city": "Москва",
+        "skillName": "dffdfwf",
+        "skillId": "1",
+        "skillWants": [
+          "8"
+        ],
+        "avatar": "http://localhost:3000/uploads/unknown.jpg",
+        "photos": [
+          "http://localhost:3000/uploads/photos-1752248730787.jpg"
+        ]
+      }
+    }
+  ]
+}

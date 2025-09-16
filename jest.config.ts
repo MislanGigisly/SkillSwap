@@ -3,9 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
+import type { Config } from 'jest';
 import type { JestConfigWithTsJest } from 'ts-jest';
-
 
 const config: JestConfigWithTsJest = {
   // All imported modules in your tests should be mocked automatically
@@ -27,7 +26,7 @@ const config: JestConfigWithTsJest = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -35,7 +34,7 @@ const config: JestConfigWithTsJest = {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -93,6 +92,10 @@ const config: JestConfigWithTsJest = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
+    '^@entities/(.*)$': '<rootDir>/src/entities/$1',
+    '^@shared/(.*)$': '<rootDir>/src/shared/$1',
+    '^@api/(.*)$': '<rootDir>/src/api/$1',
+    '^@api$': '<rootDir>/src/api/index'
     //тут согкращения путей импорта п: '^@components': '<rootDir>/src/components'
   },
 
@@ -186,8 +189,8 @@ const config: JestConfigWithTsJest = {
       'ts-jest',
       {
         // настройки для ts-jest
-      },
-    ],
+      }
+    ]
   }
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
@@ -207,11 +210,6 @@ const config: JestConfigWithTsJest = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-
-
-
-
-
 };
 
 export default config;

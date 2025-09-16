@@ -1,0 +1,105 @@
+.formContainer {
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 556px;
+  height: 692px;
+  flex: 1 1 50%;
+  padding: 121.5px 60px;
+  background-color: var(--card);
+  border-radius: 12px;
+  position: relative;
+  margin-left: auto;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid var(--caption);
+  border-radius: 8px;
+  background-color: var(--input);
+  color: var(--text);
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonDescriptionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.orContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  color: var(--text);
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--disabled);
+}
+
+.orContainer span {
+  padding: 0 4px;
+}
+
+.input {
+  padding: 18px 20px;
+  border: 1px solid var(--disabled);
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: var(--caption);
+  font-size: 16px;
+  opacity: 1;
+}
+
+.label {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.passwordInputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.passwordRequirements {
+  font-size: 12px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.visibilityButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

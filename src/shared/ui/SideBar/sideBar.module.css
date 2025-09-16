@@ -1,0 +1,47 @@
+.switchesContainer {
+  padding: 40px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.listSwitches {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.switchLink {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.listSwitchItem {
+  display: flex;
+  width: 244px;
+  height: 44px;
+  align-items: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.activeSwitch {
+  background-color: #deebc5;
+  cursor: default;
+}
+
+.switchLogo {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px 12px 12px 20px;
+}
+
+.switchSpan {
+  margin-left: 12px;
+  font-size: 16px;
+  font-family: var(--main-font);
+}

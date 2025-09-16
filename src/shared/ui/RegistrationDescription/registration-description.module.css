@@ -1,0 +1,45 @@
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  min-width: 556px;
+  height: 692px;
+  flex: 1 1 50%;
+  padding: 132px 60px;
+  background-color: var(--card);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--accent-font);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--main-font);
+}

@@ -1,0 +1,66 @@
+@import url(../../../app/styles/colors.css);
+.button {
+  border-radius: 12px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+/* Размеры */
+.button.small {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+.button.medium {
+  padding: 8px 16px;
+  font-size: 1rem;
+}
+
+.button.large {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+/* Primary */
+.button.primary {
+  background-color: var(--accent);
+  color: var(--text);
+}
+.button.primary:hover {
+  background-color: var(--button-hover);
+}
+.button.primary:active {
+  background-color: var(--button-pressed);
+  color: var(--card);
+}
+.button.primary.disabled {
+  background-color: var(--disabled);
+  color: var(--caption);
+  cursor: not-allowed;
+}
+
+/* Secondary */
+.button.secondary {
+  background-color: var(--card);
+  border: 2px solid var(--accent);
+  color: var(--text);
+}
+.button.secondary:hover {
+  border-color: var(--button-hover);
+  color: var(--caption);
+}
+.button.secondary:active {
+  border-color: var(--button-pressed);
+}
+.button.secondary.disabled {
+  border-color: var(--disabled);
+  color: var(--disabled-text);
+  cursor: not-allowed;
+}
+
+/* Tertiary */
+.button.tertiary {
+  background-color: var(--card);
+  color: var(-text);
+}

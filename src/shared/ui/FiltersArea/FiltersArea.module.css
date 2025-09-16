@@ -1,0 +1,77 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  background-color: var(--card);
+  border-radius: 20px;
+  min-width: 324px;
+}
+
+.section {
+  margin-bottom: 32px;
+  padding-right: 20px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.sectionTitle {
+  padding-bottom: 16px;
+}
+
+.toggleButton {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.skillCategoryHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6px;
+}
+
+.subcategories {
+  padding-left: 36px;
+}
+
+.Icon_skill {
+  display: flex;
+  margin-top: 8px;
+  width: 16px;
+  height: 16px;
+  background: url('./checkbox-lists/chevron-down.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.Icon_skill.open {
+  transform: rotate(180deg);
+}
+
+.chevronIcon {
+  display: flex;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url('./checkbox-lists/chevron-down.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.chevronIcon.open {
+  transform: rotate(180deg);
+}

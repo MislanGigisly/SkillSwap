@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background);
+  min-height: 100%;
+}
+
+.main {
+  flex: 1;
+  scrollbar-width: none;
+}
+.footer {
+  position: relative;
+}

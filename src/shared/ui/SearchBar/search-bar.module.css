@@ -1,0 +1,66 @@
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 12px;
+  padding: 12px;
+  width: 527px;
+  gap: 8px;
+}
+
+.searchInput {
+  font-family: var(--main-font);
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 2%;
+  color: var(--text);
+  flex: 1;
+}
+
+.searchInput::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--placeholder-color); /* Заполнение не применяется */
+  /* width: 19.07px;
+  height: 19.07px;
+  padding: 2px;
+  fill: var(--caption);  */
+}
+
+.clearIcon {
+  width: 10.61px;
+  height: 10.61px;
+  fill: var(--caption);
+}
+/* padding: 6.7px 6.67px;
+  fill: var(--text);
+}*/
+
+.small {
+  width: 300px; /* Я не нашла маленький размер в макете */
+}
+
+.medium {
+  width: 527px;
+}
+
+.large {
+  width: 648px;
+}

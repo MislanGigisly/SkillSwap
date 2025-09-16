@@ -1,0 +1,92 @@
+.notificationWindow {
+  border: 1px solid var(--caption);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 40px;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.notificationTitleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 436px;
+}
+
+.notificationTypeTitle {
+  font-size: 24px;
+  font-family: var(--accent-font);
+  font-weight: 500;
+}
+
+.notificationIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.notificationTitleButton {
+  color: #508826;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: var(--main-font);
+  letter-spacing: 2%;
+  padding: 0;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notificationGeneral {
+  display: flex;
+  gap: 8px;
+}
+
+.notificationInfo {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notificationCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.notificationUsernameSpan {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 24px;
+}
+
+.notificationTypeSpan {
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 16px;
+}
+
+.notificationDate {
+  color: var(--button-pressed);
+  margin-left: auto;
+}
+
+.notificationText {
+  color: var(--button-pressed);
+  text-align: center;
+}

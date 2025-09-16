@@ -1,0 +1,33 @@
+.stepIndicatorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 212px;
+  margin: 0 auto;
+}
+
+.stepText {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--accent-font);
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.stepLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stepSegment {
+  flex-grow: 1;
+  height: 4px;
+  background-color: var(--disabled);
+  border-radius: 8px;
+}
+
+.stepSegment.active {
+  background-color: var(--accent);
+}

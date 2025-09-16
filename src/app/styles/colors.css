@@ -1,0 +1,25 @@
+:root {
+  --text: #253017;
+  --accent: #abd27a;
+  --caption: #69735d;
+  --disabled-text: #9ca197;
+  --toggle: #b2b9a9;
+  --disabled: #e4e8df;
+  --card: #fff;
+  --input: #fff;
+  --text-link: #508826;
+  --button-pressed: #508826;
+  --button-hover: #deebc5;
+  --default-icon: #253017;
+  --accent-icon: #abd27a;
+  --background: #f9faf7;
+  --alarm: #e0796e;
+  --error: #bf3920;
+  --tag-business: #eee7f7;
+  --tag-creativity: #f7e7f2;
+  --tag-languages: #ebe5c5;
+  --tag-education: #e7f2f6;
+  --tag-home: #f7ebe5;
+  --tag-health: #e9f7e7;
+  --tag-default: #e8ecf7;
+}

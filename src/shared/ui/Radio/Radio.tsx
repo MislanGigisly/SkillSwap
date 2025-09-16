@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import styles from './Radio.module.css';
+import { iconSizes, TColors, TSize } from '../types';
+
+type RadioProps = {
+  onChange: (value: boolean) => void;
+  checked: boolean;
+  color?: TColors;
+  activeColor?: string;
+  size?: TSize;
+};
+
+export const Radio = (props: RadioProps) => {
+  const {
+    onChange,
+    color = 'default-icon',
+    activeColor = 'button-pressed',
+    size = 'medium',
+    checked = false
+  } = props;
+
+  const iconSize = iconSizes[size];
+
+  const handleChange = () => {
+    if (onChange) {
+      onChange(!checked);
+    }
+  };
+
+  return (
+    <button
+      className={`${styles.radioContainer} ${styles.medium}`}
+      onClick={handleChange}
+    >
+      {!checked ? (
+        <svg
+          width={iconSize}
+          height={iconSize}
+          viewBox='0 0 24 24'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <path
+            d='M12 22C6.48372 22 2 17.5163 2 12C2 6.48372 6.48372 2 12 2C17.5163 2 22 6.48372 22 12C22 17.5163 17.5163 22 12 22ZM12 3.39535C7.25581 3.39535 3.39535 7.25581 3.39535 12C3.39535 16.7442 7.25581 20.6047 12 20.6047C16.7442 20.6047 20.6047 16.7442 20.6047 12C20.6047 7.25581 16.7442 3.39535 12 3.39535Z'
+            fill={`var(--${color})`}
+          />
+        </svg>
+      ) : (
+        <svg
+          width={iconSize}
+          height={iconSize}
+          viewBox='0 0 24 24'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <path
+            d='M12 22C6.48372 22 2 17.5163 2 12C2 6.48372 6.48372 2 12 2C17.5163 2 22 6.48372 22 12C22 17.5163 17.5163 22 12 22ZM12 3.39535C7.25581 3.39535 3.39535 7.25581 3.39535 12C3.39535 16.7442 7.25581 20.6047 12 20.6047C16.7442 20.6047 20.6047 16.7442 20.6047 12C20.6047 7.25581 16.7442 3.39535 12 3.39535Z'
+            fill={`var(--${activeColor})`}
+          />
+          <circle cx='12' cy='12' r='5' fill={`var(--${activeColor})`} />
+        </svg>
+      )}
+    </button>
+  );
+};

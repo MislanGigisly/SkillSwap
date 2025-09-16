@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Сайдбар фиксирован, остальное тянется */
+  height: 100%;
+  gap: 24px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.sidebar {
+  height: 100%;
+  position: sticky;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  padding-top: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+}

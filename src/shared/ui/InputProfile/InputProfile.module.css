@@ -1,0 +1,31 @@
+.inputWrapper {
+  display: flex;
+  gap: 10px;
+  max-width: 460px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--caption);
+  padding: 12px 20px;
+  background-color: #fff;
+}
+
+.input {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+.editPen {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.input:disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+}
