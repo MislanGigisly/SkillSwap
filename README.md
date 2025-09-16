@@ -1,5 +1,12 @@
 # SkillSwap
 
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux)
+![Storybook](https://img.shields.io/badge/Storybook-Ready-ff69b4?logo=storybook)
+![Jest](https://img.shields.io/badge/Tested_with-Jest-green?logo=jest)
+![Cypress](https://img.shields.io/badge/E2E-Cypress-brightgreen?logo=cypress)
+
 SkillSwap — это веб-приложение для обмена навыками между пользователями. Проект разработан командой разработчиков, где я выполнял роль **тимлида**.
 
 ---
