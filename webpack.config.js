@@ -21,7 +21,20 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name].[hash][ext]'
+        }
+      },
+      {
+        test: /\.svg$/,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack', 'url-loader']
+      },
+      {
+        test: /\.svg$/,
+        resourceQuery: /url/, // а если явно добавить ?url — как файл-строка
         type: 'asset/resource',
         generator: {
           filename: 'images/[name].[hash][ext]'

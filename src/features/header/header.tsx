@@ -61,7 +61,6 @@ export const Header: FC<HeaderProps> = ({
     setIsLiked(value);
   };
 
-
   const handleNotificationClick = () => {
     setIsNotificationOpen(!isNotificationOpen);
     if (!isNotificationOpen) {
