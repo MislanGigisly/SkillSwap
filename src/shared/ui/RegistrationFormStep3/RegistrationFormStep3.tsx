@@ -200,7 +200,7 @@ export const RegistrationFormStep3: React.FC<RegistrationFormStep3Props> = ({
         <Button
           variant='primary'
           size='large'
-          onClick={handleExchangeRequest}
+          onClick={handleSubmit}
           type='button'
           disabled={exchangeRequestStatus || exchangeLoading || !isFormValid}
         >
