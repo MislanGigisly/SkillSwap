@@ -456,6 +456,39 @@
       "photos": [
         "http://localhost:3000/uploads/photos-1752248730787.jpg"
       ]
+    },
+    {
+      "_id": "1789985032070",
+      "name": "Ден",
+      "age": "NaN лет",
+      "gender": "Женский",
+      "description": "что то",
+      "city": "Санкт-Петербург",
+      "skillName": "навык",
+      "skillId": "3",
+      "skillWants": [
+        "26",
+        "24"
+      ],
+      "avatar": "http://localhost:3000/uploads/unknown.jpg",
+      "photos": [
+        "http://localhost:3000/uploads/photos-1789985032065.jpg"
+      ]
+    },
+    {
+      "_id": "1790680835304",
+      "name": "3141341",
+      "age": "NaN лет",
+      "gender": "Женский",
+      "description": "134134134",
+      "city": "Москва",
+      "skillName": "4314",
+      "skillId": "1",
+      "skillWants": [
+        "7"
+      ],
+      "avatar": "http://localhost:3000/uploads/unknown.jpg",
+      "photos": []
     }
   ]
 }

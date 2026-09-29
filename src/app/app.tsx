@@ -58,7 +58,7 @@ const App = () => {
         <Routes location={background || location}>
           <Route path='/' element={<Home />} />
           <Route
-            path='/skill/exchenge'
+            path='/skill/exchange'
             element={<Created onClose={() => navigate(-1)} />}
           />
 

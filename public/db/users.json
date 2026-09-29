@@ -70,6 +70,72 @@
           "http://localhost:3000/uploads/photos-1752248730787.jpg"
         ]
       }
+    },
+    {
+      "email": "43@mail.ru",
+      "password": "12345678",
+      "skillWants": [
+        "26",
+        "24"
+      ],
+      "name": "Ден",
+      "gender": "Женский",
+      "city": "Санкт-Петербург",
+      "skillId": "3",
+      "skillName": "навык",
+      "skillCanTeachCategory": "2",
+      "skillCanTeachSubCategory": "16",
+      "description": "что то",
+      "favorites": [],
+      "userCard": {
+        "_id": "1789985032070",
+        "name": "Ден",
+        "age": "NaN лет",
+        "gender": "Женский",
+        "description": "что то",
+        "city": "Санкт-Петербург",
+        "skillName": "навык",
+        "skillId": "3",
+        "skillWants": [
+          "26",
+          "24"
+        ],
+        "avatar": "http://localhost:3000/uploads/unknown.jpg",
+        "photos": [
+          "http://localhost:3000/uploads/photos-1789985032065.jpg"
+        ]
+      }
+    },
+    {
+      "email": "34134134",
+      "password": "3413431431413",
+      "skillWants": [
+        "7"
+      ],
+      "name": "3141341",
+      "city": "Москва",
+      "skillId": "1",
+      "gender": "Женский",
+      "skillName": "4314",
+      "skillCanTeachCategory": "2",
+      "skillCanTeachSubCategory": "16",
+      "description": "134134134",
+      "favorites": [],
+      "userCard": {
+        "_id": "1790680835304",
+        "name": "3141341",
+        "age": "NaN лет",
+        "gender": "Женский",
+        "description": "134134134",
+        "city": "Москва",
+        "skillName": "4314",
+        "skillId": "1",
+        "skillWants": [
+          "7"
+        ],
+        "avatar": "http://localhost:3000/uploads/unknown.jpg",
+        "photos": []
+      }
     }
   ]
 }

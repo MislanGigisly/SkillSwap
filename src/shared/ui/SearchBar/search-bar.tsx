@@ -31,9 +31,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
   size = 'medium',
   searchText = ''
 }) => {
-  const [text, setText] = useState(searchText);
-  const inputRef = useRef<HTMLInputElement>(null);
   const [searchParams, setSearchParams] = useSearchParams();
+  const [text, setText] = useState(searchParams.get('query') || ''); // ← URL → состояние, при инициализации
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -43,10 +43,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
       );
     }
   }, [placeholderColor]);
-
-  useEffect(() => {
-    setSearchParams({ query: text });
-  }, []);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
